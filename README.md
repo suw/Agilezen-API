@@ -11,7 +11,7 @@ This small class lets you connect to Agilezen.com and gather information about y
     $story = $agilezen->with('everything')
       ->getStory('PROJECT_ID', 'STORY_ID');
 
-Each of those calls returns an array of `stdClass` PHP objects.
+Each of those calls returns an array of `stdClass` PHP objects that you can loop through and do whatever you want with.
 
 ## Author
 Vic Cherubini <vmc@leftnode.com>
