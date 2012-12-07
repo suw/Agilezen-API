@@ -36,18 +36,18 @@ class Agilezen {
 		$this->buildUrl('projects');
 		$this->execute();
 		
-		return $this->json->projects;
+		return $this->json->items;
 	}
 	
 	public function getStoryList($projectId) {
-		$this->buildUrl('project', $projectId, 'stories');
+		$this->buildUrl('projects', $projectId, 'stories');
 		$this->execute();
 		
 		return $this->json->items;
 	}
 	
 	public function getStory($projectId, $storyId) {
-		$this->buildUrl('project', $projectId, 'story', $storyId);
+		$this->buildUrl('projects', $projectId, 'stories', $storyId);
 		$this->execute();
 		
 		return $this->json;
