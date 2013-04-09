@@ -52,6 +52,13 @@ class Agilezen {
 		
 		return $this->json;
 	}
+
+    public function getComments($projectId, $storyId) {
+        $this->buildUrl('projects', $projectId, 'stories', $storyId, 'comments');
+        $this->execute();
+
+        return $this->json;
+    }
 	
 	private function execute() {
 		if ( empty($this->url) ) {
