@@ -1,7 +1,5 @@
 <?php
 
-declare(encoding='UTF-8');
-
 class Agilezen {
 
 	private $json = NULL;
@@ -53,12 +51,12 @@ class Agilezen {
 		return $this->json;
 	}
 
-    public function getComments($projectId, $storyId) {
-        $this->buildUrl('projects', $projectId, 'stories', $storyId, 'comments');
-        $this->execute();
+	public function getComments($projectId, $storyId) {
+		$this->buildUrl('projects', $projectId, 'stories', $storyId, 'comments');
+		$this->execute();
 
-        return $this->json;
-    }
+		return $this->json;
+	}
 	
 	private function execute() {
 		if ( empty($this->url) ) {
