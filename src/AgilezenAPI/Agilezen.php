@@ -1,5 +1,7 @@
 <?php
 
+namespace AgilezenAPI;
+
 class Agilezen {
 
 	private $json = NULL;

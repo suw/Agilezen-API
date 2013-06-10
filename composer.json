@@ -1,0 +1,20 @@
+{
+    "name": "suw/agilezen-api",
+    "description": "Composer enabled fork of leftnode's Agilezen-API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Su Wang",
+            "email": "suw.mail@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+
+    },
+    "autoload": {
+        "psr-0": {
+            "AgilezenAPI": "src/"
+        }
+    }
+}
